@@ -5,20 +5,14 @@ import { CheckIcon } from "@heroicons/react/24/outline"
 import { useContext } from "react"
 import PortfolioContext from "../context/PortfolioContext"
 
-
 export default function Modal() {
   const [open, setOpen] = useState(true)
-  const {
-    setCurrentPage,
-    setSubmit
-  
-   } = useContext(PortfolioContext)
-
-const handleClose =()=>{
-
-  setCurrentPage('about')
-  setSubmit(false)
-}
+  const { setCurrentPage, setSubmit } = useContext(PortfolioContext)
+/** hand when modal closes */
+  const handleClose = () => {
+    setCurrentPage("about")
+    setSubmit(false)
+  }
   return (
     <Transition.Root show={open} as={Fragment}>
       <Dialog as="div" className="relative z-10" onClose={setOpen}>
@@ -48,15 +42,22 @@ const handleClose =()=>{
               <Dialog.Panel className="relative transform overflow-hidden rounded-lg bg-white px-4 pt-5 pb-4 text-left shadow-xl transition-all sm:my-8 sm:w-full sm:max-w-sm sm:p-6">
                 <div>
                   <div className="mx-auto flex h-12 w-12 items-center justify-center rounded-full bg-green-100">
-                    <CheckIcon className="h-6 w-6 text-green-600" aria-hidden="true" />
+                    <CheckIcon
+                      className="h-6 w-6 text-green-600"
+                      aria-hidden="true"
+                    />
                   </div>
                   <div className="mt-3 text-center sm:mt-5">
-                    <Dialog.Title as="h3" className="text-lg font-medium leading-6 text-gray-900">
+                    <Dialog.Title
+                      as="h3"
+                      className="text-lg font-medium leading-6 text-gray-900"
+                    >
                       Submitted!
                     </Dialog.Title>
                     <div className="mt-2">
                       <p className="text-sm text-gray-500">
-                        Thank you for reaching out, I will get right back to you! 
+                        Thank you for reaching out, I will get right back to
+                        you!
                       </p>
                     </div>
                   </div>

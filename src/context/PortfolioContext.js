@@ -1,34 +1,30 @@
-import { createContext, useState } from "react";
-const PortfolioContext = createContext();
+import { createContext, useState } from "react"
+const PortfolioContext = createContext()
 
 export const PortfolioProvider = ({ children }) => {
-  const [currentPage, setCurrentPage] = useState('about')
+  const [currentPage, setCurrentPage] = useState("about")
   const [toSend, setToSend] = useState({
-    firstName: '',
-    lastName: '',
-    email: '',
-    phone: '',
-    message: ''
-})
-const [submit, setSubmit] =useState(false)
+    firstName: "",
+    lastName: "",
+    email: "",
+    phone: "",
+    message: "",
+  })
+  const [submit, setSubmit] = useState(false)
 
-
-
-return (
+  return (
     <PortfolioContext.Provider
-      value={{ 
+      value={{
         currentPage,
         toSend,
         submit,
         setCurrentPage,
         setToSend,
-        setSubmit
-
-      
+        setSubmit,
       }}
-      >
+    >
       {children}
-       </PortfolioContext.Provider>
-)
-    }
-    export default PortfolioContext;
+    </PortfolioContext.Provider>
+  )
+}
+export default PortfolioContext

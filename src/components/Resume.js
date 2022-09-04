@@ -1,3 +1,4 @@
+/** resume is also saved as a PDF available for download using browser */
 export default function Resume() {
   return (
     <div className="bg-white lg:relative ">
@@ -10,10 +11,10 @@ export default function Resume() {
               Natalie Pope Fairbourne
             </h3>
             <p className="mt-2 text-base leading-8 font-light tracking-tight text-gray-900">
-            natalie@yoodlize.com
+              natalie@yoodlize.com
             </p>
             <p className="text-base leading-8 font-light tracking-tight text-gray-900">
-            801-708-1016
+              801-708-1016
             </p>
           </div>
         </div>
@@ -45,12 +46,12 @@ export default function Resume() {
                   />
                 </div>
                 <a
-              href = "./fairbourne_resume.pdf"
-              target="_blank"
-                className="w-full mt-2 bg-white border border-red-700 rounded-md py-3 px-8 flex items-center justify-center text-base font-medium text-red-700 hover:bg-red-100 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-50 focus:ring-grey-200"
-              >
-               Download my Resume
-              </a>
+                  href="./fairbourne_resume.pdf"
+                  target="_blank"
+                  className="w-full mt-2 bg-white border border-red-700 rounded-md py-3 px-8 flex items-center justify-center text-base font-medium text-red-700 hover:bg-red-100 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-50 focus:ring-grey-200"
+                >
+                  Download my Resume
+                </a>
               </figure>
             </div>
           </div>

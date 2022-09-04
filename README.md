@@ -15,6 +15,8 @@
 This is my porfolio that I built using React. It is built 100% with conditional rendering, and no routes. The contact form submits, and the resume is downloadable. I used the tailwind css library for my styling.  It is fully responsive.
   ## Usage
 Live application can be found [here](https://nadybee.github.io/introduce/)
+<br>
+![alt text](/public/images/screenshot.png)
 
   ## Installation
 To run locally, please clone and run `npm install` then `npm start`

@@ -1,3 +1,4 @@
+/** keeping test if I want to use it for later */
 import { render, screen } from '@testing-library/react';
 import App from './App';
 

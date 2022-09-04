@@ -1,37 +1,25 @@
-// import { Fragment, useEffect } from "react"
-// import { StarIcon } from "@heroicons/react/20/solid"
-// import { Tab } from "@headlessui/react"
 import { useContext } from "react"
 
 import projects from "../projects"
 import PortfolioContext from "../context/PortfolioContext"
 
-// function classNames(...classes) {
-//   return classes.filter(Boolean).join(" ")
-// }
-
+/** will change project according to the current state */
 export default function Project() {
-  let project;
-  const {currentPage} =useContext(PortfolioContext)
-  if(currentPage === 'wedding'){
+  let project
+  const { currentPage } = useContext(PortfolioContext)
+  if (currentPage === "wedding") {
     project = projects[0]
-  }
-  else if (currentPage === 'date'){
-    project=projects[1]
-  }
-  else if (currentPage === 'blackjack'){
-    project=projects[2]
-  }
-  else if(currentPage === 'weather'){
-    project=projects[3]
-  }
-  else if(currentPage === 'tech-blog'){
-    project=projects[4]
-  }
-  else if (currentPage === 'yoodlize'){
+  } else if (currentPage === "date") {
+    project = projects[1]
+  } else if (currentPage === "blackjack") {
+    project = projects[2]
+  } else if (currentPage === "weather") {
+    project = projects[3]
+  } else if (currentPage === "tech-blog") {
+    project = projects[4]
+  } else if (currentPage === "yoodlize") {
     project = projects[5]
   }
-
 
   return (
     <div className="bg-white mt-10">
@@ -82,7 +70,7 @@ export default function Project() {
                 What was used:
               </h3>
               <div className="mt-4 prose prose-sm text-gray-500">
-                <ul >
+                <ul>
                   {project.highlights.map((highlight) => (
                     <li key={highlight}>{highlight}</li>
                   ))}
@@ -92,19 +80,17 @@ export default function Project() {
 
             <div className="mt-10 grid grid-cols-1 gap-x-6 gap-y-4 sm:grid-cols-2">
               <a
-                
                 className="w-full bg-red-600 border border-transparent rounded-md py-3 px-8 flex items-center justify-center text-base font-medium text-white hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-50 focus:ring-red-500"
-                href ={project.href}
-                target= "_blank"
+                href={project.href}
+                target="_blank"
                 rel="noreferrer"
               >
                 Deployed App
               </a>
               <a
-           
                 className="w-full bg-red-50 border border-transparent rounded-md py-3 px-8 flex items-center justify-center text-base font-medium text-red-700 hover:bg-red-100 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-50 focus:ring-red-500"
-                href= {project.github}
-                target= "_blank"
+                href={project.github}
+                target="_blank"
                 rel="noreferrer"
               >
                 GitHub

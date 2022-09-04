@@ -9,11 +9,16 @@ import PortfolioContext from "../context/PortfolioContext"
 export default function Modal() {
   const [open, setOpen] = useState(true)
   const {
-    setCurrentPage
-    
+    setCurrentPage,
+    setSubmit
+  
    } = useContext(PortfolioContext)
 
+const handleClose =()=>{
 
+  setCurrentPage('about')
+  setSubmit(false)
+}
   return (
     <Transition.Root show={open} as={Fragment}>
       <Dialog as="div" className="relative z-10" onClose={setOpen}>
@@ -26,7 +31,7 @@ export default function Modal() {
           leaveFrom="opacity-100"
           leaveTo="opacity-0"
         >
-          <div className="fixed inset-0 bg-gray-500 bg-opacity-75 transition-opacity" />
+          <div className="fixed inset-0 bg-gray-300 bg-opacity-75 transition-opacity" />
         </Transition.Child>
 
         <div className="fixed inset-0 z-10 overflow-y-auto">
@@ -60,7 +65,7 @@ export default function Modal() {
                   <button
                     type="button"
                     className="inline-flex w-full justify-center rounded-md border border-transparent bg-red-600 px-4 py-2 text-base font-medium text-white shadow-sm hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-offset-2 sm:text-sm"
-                    onClick={() => setCurrentPage('about')}
+                    onClick={() => handleClose()}
                   >
                     Close
                   </button>

@@ -13,6 +13,7 @@ export default function Contact() {
   const {
     setCurrentPage,
     setToSend,
+    setSubmit,
     submit,
     toSend    
     
@@ -39,6 +40,7 @@ export default function Contact() {
                     message: ''
                 })
                setCurrentPage('modal')
+               setSubmit(true)
                 console.log(submit)
               
             })
@@ -55,7 +57,7 @@ export default function Contact() {
   
   return (
 <> 
-   { submit ? <Modal /> :
+{ submit ? <Modal /> :
       <main className="">
         {/* Header */}
         <div className="bg-warm-gray-50">
@@ -368,7 +370,7 @@ export default function Contact() {
 
       </main>
 
-   }
+}
    
     </>
   )

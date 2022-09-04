@@ -5,6 +5,7 @@ import Contact from "./Contact";
 import Project from "./Project";
 import Resume from "./Resume";
 import ProjectsPage from "./ProjectsPage";
+import Modal from "./modal";
 
 
 import { useContext} from 'react';
@@ -15,7 +16,7 @@ export default function Main(){
     const {currentPage} =useContext(PortfolioContext)
    return (
     <> 
-  
+
     {
         (()=>{
             if (currentPage === 'about'){
@@ -29,6 +30,11 @@ export default function Main(){
             else if(currentPage === 'resume'){
                     return (
                         <Resume />
+                    )
+            }
+            else if(currentPage === 'modal'){
+                    return (
+                        <Modal />
                     )
             }
             else if(currentPage === 'wedding'||
@@ -52,7 +58,7 @@ export default function Main(){
             }
         })()}
         {/* <Project /> */}
-    
+     
     </>
    )
 

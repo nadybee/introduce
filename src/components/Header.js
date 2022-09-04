@@ -180,7 +180,7 @@ export default function Header() {
                 <div className="mt-6">
                   <nav className="grid gap-y-8">
                   {projects.map((item) => (
-                      <button
+                      <a
                         key={item.name}
                         onClick={()=>{setCurrentPage(item.click)}}
                         className="-m-3 p-3 flex items-center rounded-md hover:bg-gray-50"
@@ -192,7 +192,7 @@ export default function Header() {
                         <span className="ml-3 text-base font-medium text-gray-900">
                           {item.name}
                         </span>
-                      </button>
+                      </a>
                     ))}
                       
                       

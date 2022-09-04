@@ -12,16 +12,13 @@ export default function About() {
         <div className="relative w-full h-64 sm:h-72 md:h-96 lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2 lg:h-full">
           <img
             className="absolute inset-0 w-full h-full object-cover object-right"
-            src="/images/IMG_1153.jpg"
+            src="/images/IMG_1153.png"
             alt=""
           />
         </div>
         <h1 className="text-2xl mt-2 tracking-tight font-bold text-gray-700  md:text-5xl">
           Let me introduce myself . . .
-          {/* <span className="block xl:inline">Data to enrich your</span>{" "}
-      <span className="block text-red-600 xl:inline">
-        online business
-      </span> */}
+       
         </h1>
         <p className="mt-3 max-w-md mx-auto text-lg text-gray-600 sm:text-xl md:mt-5 md:max-w-3xl">
           My name is Natalie Fairbourne and I live in Orem, Utah. I am a

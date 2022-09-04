@@ -12,8 +12,8 @@ export default function About() {
         <div className="relative w-full h-64 sm:h-72 md:h-96 lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2 lg:h-full">
           <img
             className="absolute inset-0 w-full h-full object-cover object-right"
-            src="/images/IMG_1153.png"
-            alt=""
+            src="./images/natalie_at_desk.png"
+            alt="middle aged white woman at desk"
           />
         </div>
         <h1 className="text-2xl mt-2 tracking-tight font-bold text-gray-700  md:text-5xl">

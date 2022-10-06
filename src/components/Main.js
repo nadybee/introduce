@@ -27,7 +27,8 @@ export default function Main() {
           currentPage === "date" ||
           currentPage === "yoodlize" ||
           currentPage === "weather" ||
-          currentPage === "blackjack"
+          currentPage === "blackjack" ||
+          currentPage === "supper club"
         ) {
           return <Project />
         } else if (currentPage === "projects") {

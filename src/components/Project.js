@@ -20,6 +20,9 @@ export default function Project() {
   } else if (currentPage === "yoodlize") {
     project = projects[5]
   }
+  else if (currentPage === "supper club") {
+    project = projects[6]
+  }
 
   return (
     <div className="bg-white mt-10">

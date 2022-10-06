@@ -5,6 +5,7 @@ import {
   LightBulbIcon,
   CakeIcon,
   DevicePhoneMobileIcon,
+  UserGroupIcon
 } from "@heroicons/react/24/outline"
 
 const projects = [
@@ -126,9 +127,25 @@ const projects = [
     icon: DevicePhoneMobileIcon,
     imageSrc: "./images/yoodlize.png",
     imageSrc2: "./images.yoodlize.png",
-    imageAlt: "screenshot of plan my date app",
+    imageAlt: "Yoodlize app",
     version: { name: "2.2.1", date: "Aug, 2022" },
     click: 'yoodlize'
+  },
+  {
+    id: 6,
+    name: "Supper Club",
+    href: "https://ancient-beyond-29372.herokuapp.com/",
+    branch: "https://github.com/nadybee/supper_club",
+    description: "Peer to peer marketplace where users can find and sell dinners ",
+    paragraph:
+      "Full MERN stack application that was my final project of BootCamp. I plan on continuing to work on this app",
+    highlights: ["React", "Node", "Express", "MongoDB", "Graphql", "Apollo Server", "AWS S3 bucket", "Tailwind CSS"],
+    icon: UserGroupIcon,
+    imageSrc: "./images/landing.jpeg",
+    imageSrc2: "./images.strawberry_salad.jpeg",
+    imageAlt: "Dinner table and food",
+    version: { name: "1.0.0", date: "Oct, 2022" },
+    click: 'supper club'
   },
 ]
 

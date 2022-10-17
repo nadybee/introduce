@@ -134,7 +134,7 @@ const projects = [
   {
     id: 6,
     name: "Supper Club",
-    href: "https://ancient-beyond-29372.herokuapp.com/",
+    href: "https://arcane-reaches-82355.herokuapp.com/",
     branch: "https://github.com/nadybee/supper_club",
     description: "Peer to peer marketplace where users can find and sell dinners ",
     paragraph:
